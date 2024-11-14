@@ -8,12 +8,12 @@ local L_2_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-sc
 local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local L_4_ = L_1_:CreateWindow({
-	Title = "ตัง Hub",
+	Title = "tang hub",
 	SubTitle = "v1",
 	TabWidth = 160,
 	Size = UDim2.fromOffset(530, 350),
 	Acrylic = false,
-	Theme = "Lighting",
+	Theme = "Green",
 	MinimizeKey = Enum.KeyCode.End
 })
 local L_5_ = {
@@ -2641,7 +2641,7 @@ do
 	L_92_.BorderSizePixel = 0
 	L_92_.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 	L_92_.Size = UDim2.new(0, 50, 0, 50)
-	L_92_.Image = "rbxassetid://103193276699177"
+	L_92_.Image = "rbxassetid://102714990501841"
 	L_92_.MouseButton1Click:Connect(function()
 		game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
 	end)
@@ -2661,9 +2661,9 @@ do
 --Create Tabs
 	local L_94_ = L_5_.Main:AddSection("Farming")
 	local L_95_ = {
-		'ตังกาก',
-		'ตีช้า',
-		'Super Fast Attack/ตีทีแม่มึงตาย'
+		'ตีไว',
+		'ตีโครตไว',
+		'โครตพ่อโครตแม่ไว'
 	}
 	local L_96_ = L_5_.Main:AddDropdown("DropdownDelayAttack", {
 		Title = "Select Fast Attack",
@@ -2679,7 +2679,7 @@ do
 		elseif _G.FastAttackFaiFao_Mode == "Normal Attack" then
 			_G.Fast_Delay = 0.25
 		elseif _G.FastAttackFaiFao_Mode == "Super Fast Attack" then
-			_G.Fast_Delay = 0.05
+			_G.Fast_Delay = 0.10
 		end
 	end)
 	local L_97_ = L_5_.Main:AddDropdown("DropdownSelectWeapon", {
@@ -6769,7 +6769,7 @@ L_5_.Misc:AddButton({
 	Title = "Rain Fruit",
 	Description = "Rain fruit (Fake)",
 	Callback = function()
-		for L_639_forvar0, L_640_forvar1 in pairs(game:GetObjects("rbxassetid://103193276699177")[1]:GetChildren()) do
+		for L_639_forvar0, L_640_forvar1 in pairs(game:GetObjects("rbxassetid://102714990501841")[1]:GetChildren()) do
 			L_640_forvar1.Parent = game.Workspace.Map
 			L_640_forvar1:MoveTo(game.Players.LocalPlayer.Character.PrimaryPart.Position + Vector3.new(math.random(-50, 50), 100, math.random(-50, 50)))
 			if L_640_forvar1.Fruit:FindFirstChild("AnimationController") then
@@ -6998,7 +6998,7 @@ L_5_.Misc:AddButton({
 		for L_695_forvar0, L_696_forvar1 in pairs(L_670_) do
 			if L_667_[L_696_forvar1] and game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buy" .. L_696_forvar1, true) == 1 then
 				local L_697_ = Instance.new("ImageLabel", L_668_)
-				L_697_.Image = "rbxassetid://103193276699177"
+				L_697_.Image = "rbxassetid://102714990501841"
 				L_697_.ImageRectSize = Vector2.new(100, 100)
 				L_697_.ImageRectOffset = L_667_[L_696_forvar1] * 100
 			end
@@ -7164,7 +7164,7 @@ end
 --info
 L_5_.Info:AddButton(
         {
-            Title = "Thank for use Rain_Hub",
+            Title = "Thank for use _Hub",
             Description = "dev by Rain sp by TThe",
             Callback = function()
                 setclipboard("dev by Rain sp by TThe")
@@ -7181,13 +7181,13 @@ L_5_.Info:AddButton(
     )
 L_5_.Info:AddButton(
         {
-            Title = "ลิ้งค์ Discord Rain_Hub",
+            Title = "ลิ้งค์ Discord tang_Hub",
             Description = "https://discord.gg/X9rfZWuG",
             Callback = function()
                 setclipboard("https://discord.gg/X9rfZWuG")
                 Fluent:Notify(
                     {
-                        Title = "Rain_Hub",
+                        Title = "tang_Hub",
                         Content = "Copied!",
                         SubContent = "", -- Optional
                         Duration = 5 -- Set to nil to make the notification not disappear
