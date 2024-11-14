@@ -8,12 +8,12 @@ local L_2_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-sc
 local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local L_4_ = L_1_:CreateWindow({
-	Title = "tang hub",
+	Title = "melon x hub",
 	SubTitle = "v1",
 	TabWidth = 160,
 	Size = UDim2.fromOffset(530, 350),
 	Acrylic = false,
-	Theme = "Green",
+	Theme = "Aqua",
 	MinimizeKey = Enum.KeyCode.End
 })
 local L_5_ = {
@@ -7165,13 +7165,13 @@ end
 L_5_.Info:AddButton(
         {
             Title = "Thank for use _Hub",
-            Description = "dev by Rain sp by TThe",
+            Description = "dev by melon x sp by TThe",
             Callback = function()
-                setclipboard("dev by Rain sp by TThe")
+                setclipboard("dev by melon x sp by TThe")
                 Fluent:Notify(
                     {
-                        Title = "Rain_Hub",
-                        Content = "dev by Rain sp by TThe",
+                        Title = "melon x_Hub",
+                        Content = "dev by Rain  sp by TThe",
                         SubContent = "", -- Optional
                         Duration = 5 -- Set to nil to make the notification not disappear
                     }
@@ -7181,13 +7181,13 @@ L_5_.Info:AddButton(
     )
 L_5_.Info:AddButton(
         {
-            Title = "ลิ้งค์ Discord tang_Hub",
-            Description = "https://discord.gg/X9rfZWuG",
+            Title = "ลิ้งค์ Discord melon x_Hub",
+            Description = "https://discord.gg/vpG2yZ4v",
             Callback = function()
-                setclipboard("https://discord.gg/X9rfZWuG")
+                setclipboard("https://discord.gg/vpG2yZ4v")
                 Fluent:Notify(
                     {
-                        Title = "tang_Hub",
+                        Title = "melon x_Hub",
                         Content = "Copied!",
                         SubContent = "", -- Optional
                         Duration = 5 -- Set to nil to make the notification not disappear
